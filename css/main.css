@@ -1,0 +1,139 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.8rem;
+  color: white;
+}
+
+h2 {
+  color: hsla(0deg, 0%, 100%, 0.9);
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+h3 {
+  color: hsla(0deg, 0%, 100%, 0.6);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1.5rem;
+  color: hsla(0deg, 0%, 100%, 0.6);
+  font-size: 1.3rem;
+  line-height: 1.75;
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-top-huge {
+  margin-top: 10rem;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(233deg, 47%, 7%);
+  text-align: center;
+}
+
+main {
+  background-color: hsl(244deg, 38%, 16%);
+  width: 45rem;
+  height: 40rem;
+  padding: 6rem;
+  padding-right: 8rem;
+  font-family: "Inter", sans-serif;
+  border-radius: 1.5rem 0 0 1.5rem;
+}
+
+span {
+  color: hsl(277deg, 64%, 61%);
+}
+
+.stats {
+  display: flex;
+}
+
+.stat {
+  margin-right: 4rem;
+}
+
+.desktop-img {
+  width: 45rem;
+  height: 40rem;
+  background-image: linear-gradient(rgba(84, 23, 119, 0.6), rgba(84, 23, 119, 0.6)), url(../images/image-header-desktop.jpg);
+  background-size: cover;
+  border-radius: 0 1.5rem 1.5rem 0;
+}
+
+@media (max-width: 1000px) {
+  .desktop-img {
+    display: none;
+  }
+  .mobile-img {
+    width: 35rem;
+    height: 20rem;
+    background-image: linear-gradient(rgba(84, 23, 119, 0.6), rgba(84, 23, 119, 0.6)), url(../images/image-header-desktop.jpg);
+    background-size: cover;
+    border-radius: 1.5rem 1.5rem 0 0;
+  }
+  main {
+    width: 35rem;
+    height: auto;
+    padding: 4rem;
+    padding-right: 6rem;
+    font-family: "Inter", sans-serif;
+    border-radius: 0 0 1.5rem 1.5rem;
+  }
+  .stats {
+    display: inline-block;
+  }
+  .stat, .stat-last {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  .stat {
+    margin-bottom: 2rem;
+  }
+  .stat-last {
+    margin-bottom: -3rem;
+  }
+  .u-margin-bottom-big {
+    margin-bottom: 2rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

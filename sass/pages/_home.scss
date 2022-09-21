@@ -1,0 +1,85 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $bg-color;
+  text-align: center;
+}
+
+main {
+  background-color: $card-color;
+  width: 45rem;
+  height: 40rem;
+  padding: 6rem;
+  padding-right: 8rem;
+  font-family: 'Inter', sans-serif;
+  border-radius: 1.5rem 0 0 1.5rem;
+}
+
+span {
+  color: $span-color;
+}
+
+
+
+.stats {
+  display: flex;
+}
+
+.stat {
+  margin-right: 4rem;
+}
+
+.desktop-img {
+  width: 45rem;
+  height: 40rem;
+  background-image: linear-gradient(rgba(#541777, .6), rgba(#541777, .6)), url(../images/image-header-desktop.jpg);
+  background-size: cover;
+  border-radius: 0 1.5rem 1.5rem 0;
+}
+
+@media (max-width: 1000px) {
+  .desktop-img {
+    display: none;
+  }
+
+  .mobile-img {
+    width: 35rem;
+    height: 20rem;
+    background-image: linear-gradient(rgba(#541777, .6), rgba(#541777, .6)), url(../images/image-header-desktop.jpg);
+    background-size: cover;
+    border-radius: 1.5rem 1.5rem 0 0;
+  }
+
+  main {
+    width: 35rem;
+    height: auto;
+    padding: 4rem;
+    padding-right: 6rem;
+    font-family: 'Inter', sans-serif;
+    border-radius: 0 0 1.5rem 1.5rem;
+  }
+
+  .stats {
+    display: inline-block;
+  }
+
+  .stat, .stat-last {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .stat {
+    margin-bottom: 2rem;
+  }
+
+  .stat-last {
+    margin-bottom: -3rem;
+  }
+
+  .u-margin-bottom-big {
+    margin-bottom: 2rem;
+  }
+}

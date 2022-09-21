@@ -1,0 +1,26 @@
+h1 {
+font-size: 2.8rem;
+color: $main-heading-and-stats-color;
+}
+
+h2 {
+color: $primary-light-color;
+font-size: 2rem;
+margin-bottom: 5px;
+}
+
+h3 {
+color: $p-color;
+font-family: 'Lexend Deca', sans-serif;
+font-weight: 400;
+text-transform: uppercase;
+letter-spacing: 2px;
+font-size: 1rem;
+}
+
+p {
+font-size: $default-font-size;
+color: $p-color;
+font-size: 1.3rem;
+line-height: 1.75;
+}
